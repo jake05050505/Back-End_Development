@@ -1,0 +1,5 @@
+Public IPv4 address:
+54.242.186.206
+Public IPv4 DNS:
+ec2-54-242-186-206.compute-1.amazonaws.com
+scp -i ssh.pem -r ubuntu@__yourDNS__:var/www
