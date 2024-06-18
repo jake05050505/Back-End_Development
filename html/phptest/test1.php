@@ -10,6 +10,8 @@
     <body>
         <h1>PHP Test 1</h1>
         <?php
+            include("navbar.php");
+            
             $name = "Joe";
             $text="Hello, world!";
             $len=strlen($text);

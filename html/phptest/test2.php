@@ -10,6 +10,8 @@
     <body>
         <h1>PHP Test 2</h1>
         <?php
+            include("navbar.php");
+            
             echo("10 + 1 = ". 10+1);
             echo("<br />");
             echo("10 - 3 = ". 10-3);
