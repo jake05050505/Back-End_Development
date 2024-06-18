@@ -9,8 +9,11 @@
     </head>
     <body>
         <h1>PHP Activity 1</h1>
+        <form name="form" action="" method="get">
+            <input type="text" name="score" id="score" placeholder="Score:">
+        </form>
         <?php
-            $pc=50;
+            $pc=$_GET['score'];
             echo($pc. "% puts you in class:<br />");
             if($pc>=70){
                 echo("First");
