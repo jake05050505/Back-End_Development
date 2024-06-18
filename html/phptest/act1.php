@@ -13,6 +13,8 @@
             <input type="text" name="score" id="score" placeholder="Score:">
         </form>
         <?php
+            include("navbar.php");
+
             $pc=$_GET['score'];
             echo($pc. "% puts you in class:<br />");
             if($pc>=70){
