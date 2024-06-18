@@ -8,10 +8,10 @@
         </style>
     </head>
     <body>
-        <h1>PHP Activity 2</h1>
         <?php
             include("navbar.php");
         ?>
+        <h1>PHP Activity 2</h1>
         <form name="form" action="" method="get">
             <input type="number" name="num1" id="num1" placeholder="num1:">
             <input type="number" name="num2" id="num2" placeholder="num2:">

@@ -8,13 +8,14 @@
         </style>
     </head>
     <body>
+        <?php
+            include("navbar.php");
+        ?>
         <h1>PHP Activity 1</h1>
         <form name="form" action="" method="get">
             <input type="text" name="score" id="score" placeholder="Score:">
         </form>
         <?php
-            include("navbar.php");
-
             $pc=$_GET['score'];
             echo($pc. "% puts you in class:<br />");
             if($pc>=70){
