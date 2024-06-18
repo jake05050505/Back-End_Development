@@ -19,5 +19,5 @@
     <span>|</span>
     <a href="/phptest/test8.php">Test 8</a>
 
-    <br />
+    <br>
 </nav>
