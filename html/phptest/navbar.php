@@ -5,6 +5,10 @@
     <span>|</span>
     <a href="/phptest/act3.php">Activity 3</a>
     <span>|</span>
+    <a href="/phptest/act4.php">Activity 4</a>
+    <span>|</span>
+    <a href="/phptest/act5.php">Activity 5</a>
+    <span>|</span>
     <a href="/phptest/test1.php">Test 1</a>
     <span>|</span>
     <a href="/phptest/test2.php">Test 2</a>
