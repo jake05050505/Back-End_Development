@@ -3,6 +3,8 @@
     <span>|</span>
     <a href="/phptest/act2.php">Activity 2</a>
     <span>|</span>
+    <a href="/phptest/act3.php">Activity 3</a>
+    <span>|</span>
     <a href="/phptest/test1.php">Test 1</a>
     <span>|</span>
     <a href="/phptest/test2.php">Test 2</a>
@@ -18,6 +20,8 @@
     <a href="/phptest/test7.php">Test 7</a>
     <span>|</span>
     <a href="/phptest/test8.php">Test 8</a>
+    <span>|</span>
+    <a href="/phptest/test9.php">Test 9</a>
 
     <br>
 </nav>
