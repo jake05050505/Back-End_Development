@@ -17,7 +17,7 @@
                 $end_number = (3/2)*(3*($start_number+4)-1);
                 return $end_number;
             }
-            echo number_machine(12);
+            echo number_machine(11);
         ?>
     </body>
 </html>

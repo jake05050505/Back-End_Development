@@ -13,7 +13,7 @@
         ?>
         <h1>PHP Activity 1</h1>
         <form name="form" action="" method="get">
-            <input type="text" name="score" id="score" placeholder="Score:">
+            <input type="text" name="score" placeholder="Score:">
         </form>
         <?php
             $pc=$_GET['score'];
