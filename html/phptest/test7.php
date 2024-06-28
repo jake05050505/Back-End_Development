@@ -1,11 +1,7 @@
 <html>
     <head>
         <title>PHP Test 7</title>
-        <style>
-            body{
-                font-family: "segoe ui", 'inconsolata', consolas, monospace;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>PHP Test 7</h1>
