@@ -1,11 +1,13 @@
 <html>
     <head>
-        <title>Get Data from Database</title>
-        <?php include ("db.php"); ?>
+        <title>Delete Data from Database</title>
+        <?php
+            include("db.php");
+        ?>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Get Data from Database</h1>
+        <h1>Delete Data from Database</h1>
         <table>
             <thead>
                 <tr>
@@ -26,7 +28,13 @@
                         echo("  <td>" . $row["employee_id"] . "</td>");
                         echo("  <td>" . $row["first_name"] . "</td>");
                         echo("  <td>" . $row["last_name"] . "</td>");
-                        echo("  <td>" . $row["email"] . "</td>"); 
+                        echo("  <td>" . $row["email"] . "</td>");
+                        echo("  <td>");
+                        echo("      <form action='delete2.php' method='GET'>");
+                        echo("          <input type='hidden' name='delete_id' value='" . $row["employee_id"] . "'>");
+                        echo("          <button type='submit'>Delete</button>");
+                        echo("      </form>");
+                        echo("  </td>");
                         echo("</tr>");
                     }
                 ?>

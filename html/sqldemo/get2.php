@@ -2,12 +2,13 @@
     <head>
         <title>Get Data from Database</title>
         <?php
-        include ("db.php");
+            include ("db.php");
 
-        if (!isset($_GET["first_name"])) {
-            $_GET["first_name"] = "";
-        }
+            if (!isset($_GET["first_name"])) {
+                $_GET["first_name"] = "";
+            }
         ?>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Get Data from Database</h1>
