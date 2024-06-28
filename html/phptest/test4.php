@@ -4,10 +4,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>PHP Test 4</h1>
         <?php
             include("navbar.php");
-            
+        ?>
+        <h1>PHP Test 4</h1>
+        <?php
             $month = date_format(date_create(),"m");
 
             if ($month == "06"){

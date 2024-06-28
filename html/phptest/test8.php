@@ -4,11 +4,11 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>PHP Test 8</h1>
         <?php
             include("navbar.php");
-            echo"<br>";
         ?>
+        <h1>PHP Test 8</h1>
+
         <form action="test7.php" method="GET">
             <label for="city">City</label>
             <input type="text" id="city" name="city" required>
