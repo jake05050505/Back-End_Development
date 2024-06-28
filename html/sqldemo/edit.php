@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <?php include("nav.php"); ?>
         <h1>Delete Data from Database</h1>
         <table>
             <thead>

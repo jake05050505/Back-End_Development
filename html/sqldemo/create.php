@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <?php include("nav.php"); ?>
         <h1>Add Data to Database</h1>
         <?php
             if (isset($_GET["result"])){
