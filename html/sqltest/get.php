@@ -18,10 +18,10 @@
             }
         ?>
         <form action="" method="GET">
-            <input type="text" name="first_name" value="<?php echo($_GET['first_name']); ?>">
-            <input type="text" name="first_name" value="<?php echo($_GET['last_name']); ?>">
-            <input type="text" name="first_name" value="<?php echo($_GET['email']); ?>">
-            <input type="submit" value="">
+            <input type="text" name="first_name" value="<?php echo($_GET['first_name']); ?>" placeholder="First Name:">
+            <input type="text" name="last_name" value="<?php echo($_GET['last_name']); ?>" placeholder="Last Name:">
+            <input type="text" name="email" value="<?php echo($_GET['email']); ?>" placeholder="Email:">
+            <input type="submit" value="Search">
         </form>
         <table>
             <thead>
@@ -34,7 +34,7 @@
             </thead>
             <tbody>
                 <?php
-                    $query = 'SELECT * FROM `employees` WHERE `first_name` LIKE "%' . $_GET["first_name"] . '%" OR `last_name` LIKE "%' . $_GET["last_name"] . '%" OR `email` LIKE "%' . $_GET["email"] . '%";';
+                    $query = "SELECT * FROM `employees` WHERE (`first_name` LIKE '%" . $_GET["first_name"] . "%') AND (`last_name` LIKE '%" . $_GET["last_name"] . "%') AND (`email` LIKE '%" . $_GET["email"] . "%')";
                     $result = mysqli_query($conn, $query);
                     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
