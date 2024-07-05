@@ -5,4 +5,3 @@
     $dbname = "HR";
 
     $conn = mysqli_connect($host, $username, $password, $dbname);
-?>

@@ -1,6 +1,6 @@
 Public IPv4 address:
-3.94.165.163
+100.26.110.71
 Public IPv4 DNS:
-ec2-3-94-165-163.compute-1.amazonaws.com
+ec2-100-26-110-71.compute-1.amazonaws.com
 
 scp -i ssh.pem -r html ubuntu@DNS:/var/www
