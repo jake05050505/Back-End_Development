@@ -7,43 +7,47 @@
         <?php
             include('nav.php');
             include('db.php');
-            if (!isset($_GET["first_name"])) {
-                $_GET["first_name"] = "";
+            if (!isset($_GET["FirstName"])) {
+                $_GET["FirstName"] = "";
             }
-            if (!isset($_GET["last_name"])) {
-                $_GET["last_name"] = "";
+            if (!isset($_GET["LastName"])) {
+                $_GET["LastName"] = "";
             }
-            if (!isset($_GET["email"])) {
-                $_GET["email"] = "";
+            if (!isset($_GET["Email"])) {
+                $_GET["Email"] = "";
             }
         ?>
         <form action="" method="GET">
-            <input type="text" name="first_name" value="<?php echo($_GET['first_name']); ?>" placeholder="First Name:">
-            <input type="text" name="last_name" value="<?php echo($_GET['last_name']); ?>" placeholder="Last Name:">
-            <input type="text" name="email" value="<?php echo($_GET['email']); ?>" placeholder="Email:">
+            <input type="text" name="FirstName" value="<?php echo($_GET['FirstName']); ?>" placeholder="FirstName:">
+            <input type="text" name="LastName" value="<?php echo($_GET['LastName']); ?>" placeholder="LastName:">
+            <input type="text" name="Email" value="<?php echo($_GET['Email']); ?>" placeholder="Email:">
             <input type="submit" value="Search">
         </form>
         <table>
             <thead>
                 <tr>
-                    <th>id</th>
+                    <th>teacherid</th>
                     <th>firstname</th>
                     <th>lastname</th>
                     <th>email</th>
+                    <th>phone</th>
+                    <th>salary</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM `employees` WHERE (`first_name` LIKE '%" . $_GET["first_name"] . "%') AND (`last_name` LIKE '%" . $_GET["last_name"] . "%') AND (`email` LIKE '%" . $_GET["email"] . "%')";
+                    $query = "SELECT * FROM `teacher` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Email` LIKE '%" . $_GET["Email"] . "%')";
                     $result = mysqli_query($conn, $query);
                     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
                     foreach($rows as $row){
                         echo('<tr>');
-                        echo('  <td>' . $row['employee_id'] . '</td>');
-                        echo('  <td>' . $row['first_name'] . '</td>');
-                        echo('  <td>' . $row['last_name'] . '</td>');
-                        echo('  <td>' . $row['email'] . '</td>');
+                        echo('  <td>' . $row['teacherID'] . '</td>');
+                        echo('  <td>' . $row['FirstName'] . '</td>');
+                        echo('  <td>' . $row['LastName'] . '</td>');
+                        echo('  <td>' . $row['Email'] . '</td>');
+                        echo('  <td>' . $row['PhoneNumber'] . '</td>');
+                        echo('  <td>' . $row['Salary'] . '</td>');
                         echo('</tr>');
                     }
                 ?>

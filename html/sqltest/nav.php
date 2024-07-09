@@ -1,8 +1,8 @@
-<a href="/sqltest/create.php">create</a>
+<a href="/assessment/create.php">create</a>
 <span>|</span>
-<a href="/sqltest/get.php">read</a>
+<a href="/assessment/get.php">read</a>
 <span>|</span>
-<a href="/sqltest/edit.php">update</a>
+<a href="/assessment/edit.php">update</a>
 <span>|</span>
-<a href="/sqltest/delete.php">delete</a>
+<a href="/assessment/delete.php">delete</a>
 <br>
