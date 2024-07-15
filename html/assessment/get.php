@@ -26,28 +26,30 @@
         <table>
             <thead>
                 <tr>
-                    <th>teacherid</th>
+                    <th>staffid</th>
                     <th>firstname</th>
                     <th>lastname</th>
                     <th>email</th>
                     <th>phone</th>
                     <th>salary</th>
+                    <th>role</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM `teacher` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Email` LIKE '%" . $_GET["Email"] . "%')";
+                    $query = "SELECT * FROM `staff` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Email` LIKE '%" . $_GET["Email"] . "%')";
                     $result = mysqli_query($conn, $query);
                     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
                     foreach($rows as $row){
                         echo('<tr>');
-                        echo('  <td>' . $row['teacherID'] . '</td>');
+                        echo('  <td>' . $row['staffID'] . '</td>');
                         echo('  <td>' . $row['FirstName'] . '</td>');
                         echo('  <td>' . $row['LastName'] . '</td>');
                         echo('  <td>' . $row['Email'] . '</td>');
                         echo('  <td>' . $row['PhoneNumber'] . '</td>');
                         echo('  <td>' . $row['Salary'] . '</td>');
+                        echo('  <td>' . $row['Role'] . '</td>');
                         echo('</tr>');
                     }
                 ?>
