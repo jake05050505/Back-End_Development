@@ -5,8 +5,9 @@ body{
     font-family: "segoe ui", 'inconsolata', consolas, monospace
 }
 nav{
-    border: 2px solid light-dark(#161616,#e9e9e9);
-    padding-bottom: 0;
+    background-color: light-dark(#e9e9ed,#30363d);
+    padding: 0 1rem;
+    border-radius: 0.8rem;
 }
 div{
     position: relative;
