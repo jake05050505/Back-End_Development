@@ -5,7 +5,7 @@
             include("db.php");
             $id = $_POST['edit_id'];
 
-            $query = "SELECT `first_name`, `last_name`, `email` FROM `employees` WHERE `employee_id` = '" . $id . "';";
+            $query = "SELECT `first_name`, `last_name`, `email` FROM `staff` WHERE `staffID` = '" . $id . "';";
             $result = mysqli_query($conn, $query);
 
             if (!$result) {
@@ -27,15 +27,15 @@
         <?php include("nav.php"); ?>
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
-            <input type="hidden" name="employee_id" value="<?php echo($id); ?>">
+            <input type="hidden" name="staffID" value="<?php echo($id); ?>">
             <label for="first-name-input">Employee First Name:</label>
-            <input type="text" name="employee_first_name" id="first-name-input" value="<?php echo($record['first_name']);?>">
+            <input type="text" name="FirstName" id="first-name-input" value="<?php echo($record['FirstName']);?>">
             <br>
             <label for="last-name-input">Employee Last Name:</label>
-            <input type="text" name="employee_last_name" id="last-name-input" value="<?php echo($record['last_name']);?>">
+            <input type="text" name="employee_last_name" id="last-name-input" value="<?php echo($record['LastName']);?>">
             <br>
-            <label for="email-input">Employee Email:</label>
-            <input type="text" name="employee_email" id="email-input" value="<?php echo($record['email']);?>">
+            <label for="email-input">Email:</label>
+            <input type="text" name="employee_email" id="email-input" value="<?php echo($record['Email']);?>">
             <br>
             <input type="submit">
         </form>
