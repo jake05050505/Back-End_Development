@@ -46,8 +46,6 @@
                         echo('  <td>' . $row['LastName'] . '</td>');
                         echo('  <td>' . $row['Email'] . '</td>');
                         echo('  <td>' . $row['PhoneNumber'] . '</td>');
-                        echo('  <td>' . $row['Salary'] . '</td>');
-                        echo('  <td>' . $row['Role'] . '</td>');
                         echo('</tr>');
                     }
                 ?>

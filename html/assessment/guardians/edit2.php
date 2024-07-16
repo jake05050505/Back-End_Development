@@ -28,10 +28,10 @@
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
             <input type="hidden" name="staffID" value="<?php echo($id); ?>">
-            <label for="FirstName">Employee First Name:</label>
+            <label for="FirstName">First Name:</label>
             <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>">
             <br>
-            <label for="LastName">Employee Last Name:</label>
+            <label for="LastName">Last Name:</label>
             <input type="text" name="LastName" value="<?php echo($record['LastName']);?>">
             <br>
             <label for="Email">Email:</label>
