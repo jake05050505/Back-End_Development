@@ -5,7 +5,7 @@
             include("db.php");
             $id = $_POST['edit_id'];
 
-            $query = "SELECT `first_name`, `last_name`, `email` FROM `staff` WHERE `staffID` = '" . $id . "';";
+            $query = "SELECT `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Salary`, `Role` FROM `staff` WHERE `staffID` = '" . $id . "';";
             $result = mysqli_query($conn, $query);
 
             if (!$result) {
@@ -15,7 +15,7 @@
 
             $number_of_rows_found = mysqli_affected_rows($conn);
             if ($number_of_rows_found == 0) {
-                echo("No records deleted.");
+                echo("No records modified.");
                 die();
             }
 
@@ -28,14 +28,23 @@
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
             <input type="hidden" name="staffID" value="<?php echo($id); ?>">
-            <label for="first-name-input">Employee First Name:</label>
-            <input type="text" name="FirstName" id="first-name-input" value="<?php echo($record['FirstName']);?>">
+            <label for="FirstName">Employee First Name:</label>
+            <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>">
             <br>
-            <label for="last-name-input">Employee Last Name:</label>
-            <input type="text" name="employee_last_name" id="last-name-input" value="<?php echo($record['LastName']);?>">
+            <label for="LastName">Employee Last Name:</label>
+            <input type="text" name="LastName" value="<?php echo($record['LastName']);?>">
             <br>
-            <label for="email-input">Email:</label>
-            <input type="text" name="employee_email" id="email-input" value="<?php echo($record['Email']);?>">
+            <label for="Email">Email:</label>
+            <input type="text" name="Email" value="<?php echo($record['Email']);?>">
+            <br>
+            <label for="PhoneNumber">Phone Number:</label>
+            <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>">
+            <br>
+            <label for="Salary">Salary:</label>
+            <input type="text" name="Salary" value="<?php echo($record['Salary']);?>">
+            <br>
+            <label for="Role">Role:</label>
+            <input type="text" name="Role" value="<?php echo($record['Role']);?>">
             <br>
             <input type="submit">
         </form>
