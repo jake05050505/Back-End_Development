@@ -26,13 +26,11 @@
         <table>
             <thead>
                 <tr>
-                    <th>staffid</th>
-                    <th>firstname</th>
-                    <th>lastname</th>
-                    <th>email</th>
-                    <th>phone</th>
-                    <th>salary</th>
-                    <th>role</th>
+                    <th>guardianID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
                 </tr>
             </thead>
             <tbody>

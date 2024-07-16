@@ -12,13 +12,11 @@
         <table>
             <thead>
                 <tr>
-                    <th>staffID</th>
+                    <th>guardianID</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
                     <th>Phone Number</th>
-                    <th>Salary</th>
-                    <th>Role</th>
                 </tr>
             </thead>
             <tbody>
@@ -34,8 +32,6 @@
                         echo("  <td>" . $row["LastName"] . "</td>");
                         echo("  <td>" . $row["Email"] . "</td>");
                         echo("  <td>" . $row["PhoneNumber"] . "</td>");
-                        echo("  <td>" . $row["Salary"] . "</td>");
-                        echo("  <td>" . $row["Role"] . "</td>");
                         echo("  <td>");
                         echo("      <form action='edit2.php' method='POST'>");
                         echo("          <input type='hidden' name='edit_id' value='" . $row[$dbID] . "'>");

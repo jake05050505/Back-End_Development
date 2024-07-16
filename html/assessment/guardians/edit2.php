@@ -5,7 +5,7 @@
             include("db.php");
             $id = $_POST['edit_id'];
 
-            $query = "SELECT `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Salary`, `Role` FROM `$dbtable` WHERE `$dbID` = '" . $id . "';";
+            $query = "SELECT `FirstName`, `LastName`, `Email`, `PhoneNumber` FROM `$dbtable` WHERE `$dbID` = '" . $id . "';";
             $result = mysqli_query($conn, $query);
 
             if (!$result) {
@@ -39,12 +39,6 @@
             <br>
             <label for="PhoneNumber">Phone Number:</label>
             <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>">
-            <br>
-            <label for="Salary">Salary:</label>
-            <input type="text" name="Salary" value="<?php echo($record['Salary']);?>">
-            <br>
-            <label for="Role">Role:</label>
-            <input type="text" name="Role" value="<?php echo($record['Role']);?>">
             <br>
             <input type="submit">
         </form>
