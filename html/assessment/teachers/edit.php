@@ -38,7 +38,7 @@
                         echo("  <td>" . $row["Role"] . "</td>");
                         echo("  <td>");
                         echo("      <form action='edit2.php' method='POST'>");
-                        echo("          <input type='hidden' name='edit_id' value='" . $row["$dbID"] . "'>");
+                        echo("          <input type='hidden' name='edit_id' value='" . $row[$dbID] . "'>");
                         echo("          <button type='submit'>Edit</button>");
                         echo("      </form>");
                         echo("  </td>");
