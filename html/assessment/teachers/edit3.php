@@ -14,7 +14,7 @@
         die();
     }
 
-    $query = "UPDATE `employees` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `Email` = '" . $email . "', `PhoneNumber` = '" . $phone_number . "', `Salary` = '" . $salary . "', `Role` = '" . $role . "' WHERE `staffID` = '" . $id . "' ;";
+    $query = "UPDATE `staff` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `Email` = '" . $email . "', `PhoneNumber` = '" . $phone_number . "', `Salary` = '" . $salary . "', `Role` = '" . $role . "' WHERE `staffID` = '" . $id . "' ;";
     $result = mysqli_query($conn, $query);
 
     if(!$result){
