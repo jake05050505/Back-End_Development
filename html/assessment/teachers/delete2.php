@@ -1,19 +1,15 @@
-<?php
-    include("db.php");
-
-    $query = "DELETE FROM `employees` WHERE `employee_id` = " . $_GET['delete_id'] . ";";
-    $result = mysqli_query($conn, $query);
-
-    if (!$result){
-        echo("Failed to execute query: ". mysqli_error($conn));
-        die();
-    }
-
-    $number_of_rows_deleted = mysqli_affected_rows($conn);
-    if ($number_of_rows_deleted == 0){
-        echo("No records deleted.");
-        die();
-    }
-
-    header("Location: delete.php");
-    die();
+<html><!--All of the code in this file was written by me-->
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The entry with staffID=<?php echo($_GET["delete_id"]) ?> will be deleted.</h1>
+    <form action="delete3.php" method="GET">
+        <input type="hidden" name="delete_id" value="<?php echo($_GET["delete_id"]); ?>">
+        <input type="submit" value="DELETE">
+    </form>
+    <form action="delete.php">
+        <button type="submit">Go back</button>
+    </form>
+</body>
+</html>

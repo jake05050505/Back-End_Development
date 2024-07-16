@@ -1,4 +1,4 @@
-<html>
+<html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
         <title>Add Data to Database</title>
         <?php
@@ -13,10 +13,10 @@
             if (isset($_GET["result"])){
                 if ($_GET["result"] == "success"){
                     echo("<p>Your record was added successfully.</p>");
-                } elseif ($_GET["result"] == "duplicate"){
-                    echo("<p>The country code you entered is already in use.</p>");
                 } elseif ($_GET["result"] == "invalid"){
                     echo("<p>You must complete all input fields.</p>");
+                } else{
+                    die();
                 }
             }
         ?>

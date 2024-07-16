@@ -1,13 +1,11 @@
-<nav>
+<nav><!--All of the code in this file was written by me-->
     <!--Teachers-->
-    <div>
-        <a href="/assessment/Teachers/create.php">create</a>
-        <span>|</span>
-        <a href="/assessment/Teachers/get.php">read</a>
-        <span>|</span>
-        <a href="/assessment/Teachers/edit.php">update</a>
-        <span>|</span>
-        <a href="/assessment/Teachers/delete.php">delete</a>
-        <br>
-    </div>
+    <a href="/assessment/teachers/create.php">create</a>
+    <span>|</span>
+    <a href="/assessment/teachers/get.php">read</a>
+    <span>|</span>
+    <a href="/assessment/teachers/edit.php">update</a>
+    <span>|</span>
+    <a href="/assessment/teachers/delete.php">delete</a>
+    <br>
 </nav>
