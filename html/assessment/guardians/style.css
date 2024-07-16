@@ -3,5 +3,9 @@ body{
 }
 nav{
     border: 2px solid #161616;
-    padding-bottom: 2px;
+    padding-bottom: 0;
+}
+div{
+    position: relative;
+    top: 0.4em;
 }
