@@ -29,7 +29,7 @@
 
                     foreach($rows as $row) {
                         echo("<tr>");
-                        echo("  <td>" . $row["$dbID"] . "</td>");
+                        echo("  <td>" . $row[$dbID] . "</td>");
                         echo("  <td>" . $row["FirstName"] . "</td>");
                         echo("  <td>" . $row["LastName"] . "</td>");
                         echo("  <td>" . $row["Email"] . "</td>");
