@@ -1,13 +1,15 @@
 <nav><!--All of the code in this file was written by me-->
     <!--Guardians-->
     <div>
-        <a href="/assessment/guardian/get.php" aria-disabled="True">Parents & Guardians</a>
+        <a href="/assessment/guardian/get.php" aria-disabled="true">Parents & Guardians</a>
         <span>|</span>
         <a href="/assessment/library/get.php">Library data</a>
         <span>|</span>
         <a href="/assessment/staff/get.php">Staff</a>
         <span>|</span>
         <a href="/assessment/student/get.php">Students</a>
+        <span>|</span>
+        <a href="/assessment">index</a>
     </div>
     <div>
         <a href="/assessment/<?php echo($dbtable) ?>/create.php">create</a>
@@ -17,8 +19,6 @@
         <a href="/assessment/<?php echo($dbtable) ?>/edit.php">update</a>
         <span>|</span>
         <a href="/assessment/<?php echo($dbtable) ?>/delete.php">delete</a>
-        <span>|</span>
-        <a href="/assessment">index</a>
     </div>
     <br>
 </nav>

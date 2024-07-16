@@ -21,23 +21,17 @@
             }
         ?>
         <form action="create2.php" method="GET">
-            <label for="FirstName">First Name:</label>
-            <input type="text" name="FirstName" maxlength="32">
+            <input type="text" name="FirstName" id="FirstName" maxlength="32" placeholder="First Name:">
             <br>
-            <label for="LastName">Last Name:</label>
-            <input type="text" name="LastName" maxlength="32">
+            <input type="text" name="LastName" maxlength="32" placeholder="Last Name:">
             <br>
-            <label for="Email">Email:</label>
-            <input type="email" name="Email" maxlength="64">
+            <input type="email" name="Email" maxlength="64" placeholder="E-Mail address:">
             <br>
-            <label for="PhoneNumber">Phone Number:</label>
-            <input type="text" name="PhoneNumber" maxlength="16">
+            <input type="text" name="PhoneNumber" maxlength="16" placeholder="Phone Number:">
             <br>
-            <label for="Salary">Salary:</label>
-            <input type="number" name="Salary" step="1">
+            <input type="number" name="Salary" step="1" placeholder="Salary:">
             <br>
-            <label for="Role">Role:</label>
-            <input type="text" name="Role">
+            <input type="text" name="Role" placeholder="Role:">
             <input type="submit">
         </form>
     </body>
