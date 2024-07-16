@@ -1,11 +1,21 @@
+:root{
+    color-scheme: light dark;
+}
 body{
     font-family: "segoe ui", 'inconsolata', consolas, monospace
 }
 nav{
-    border: 2px solid #161616;
+    border: 2px solid light-dark(#161616,#e9e9e9);
     padding-bottom: 0;
 }
 div{
     position: relative;
     top: 0.4em;
+}
+input{
+    margin: 0.2em;
+    padding: 0.1em;
+  }
+h1{
+    margin: auto;
 }
