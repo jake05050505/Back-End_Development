@@ -23,13 +23,13 @@
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM `staff`;";
+                    $query = "SELECT * FROM `$dbtable`;";
                     $result = mysqli_query($conn, $query);
                     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
                     foreach($rows as $row) {
                         echo("<tr>");
-                        echo("  <td>" . $row["staffID"] . "</td>");
+                        echo("  <td>" . $row["$dbID"] . "</td>");
                         echo("  <td>" . $row["FirstName"] . "</td>");
                         echo("  <td>" . $row["LastName"] . "</td>");
                         echo("  <td>" . $row["Email"] . "</td>");
@@ -38,7 +38,7 @@
                         echo("  <td>" . $row["Role"] . "</td>");
                         echo("  <td>");
                         echo("      <form action='edit2.php' method='POST'>");
-                        echo("          <input type='hidden' name='edit_id' value='" . $row["staffID"] . "'>");
+                        echo("          <input type='hidden' name='edit_id' value='" . $row["$dbID"] . "'>");
                         echo("          <button type='submit'>Edit</button>");
                         echo("      </form>");
                         echo("  </td>");

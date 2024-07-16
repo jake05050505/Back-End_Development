@@ -13,7 +13,7 @@
         die();
     }
 
-    $query = "INSERT INTO `staff` (`FirstName`, `LastName`, `Email`, `PhoneNumber`, `Salary`, `Role`) VALUES ('" . $first_name . "', '" . $last_name ."', '". $email ."', '". $phone_number ."', '". $salary ."', '". $role ."');";
+    $query = "INSERT INTO `$dbtable` (`FirstName`, `LastName`, `Email`, `PhoneNumber`, `Salary`, `Role`) VALUES ('" . $first_name . "', '" . $last_name ."', '". $email ."', '". $phone_number ."', '". $salary ."', '". $role ."');";
 
     try{
         $result = mysqli_query($conn, $query);

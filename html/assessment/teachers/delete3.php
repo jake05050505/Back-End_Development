@@ -1,7 +1,7 @@
 <?php //This code is repurposed from Sam Hirst's code provided in class
     include("db.php");
 
-    $query = "DELETE FROM `staff` WHERE `staffID` = " . $_GET['delete_id'] . ";";
+    $query = "DELETE FROM `$dbtable` WHERE `$dbID` = " . $_GET['delete_id'] . ";";
     $result = mysqli_query($conn, $query);
 
     if (!$result){

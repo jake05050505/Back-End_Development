@@ -1,7 +1,7 @@
 <?php //This code is repurposed from Sam Hirst's code provided in class
     include("db.php");
 
-    $id = $_GET['staffID'];
+    $id = $_GET['$dbID'];
     $first_name = $_GET['FirstName'];
     $last_name = $_GET['LastName'];
     $email = $_GET['Email'];
@@ -14,7 +14,7 @@
         die();
     }
 
-    $query = "UPDATE `staff` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `Email` = '" . $email . "', `PhoneNumber` = '" . $phone_number . "', `Salary` = '" . $salary . "', `Role` = '" . $role . "' WHERE `staffID` = '" . $id . "' ;";
+    $query = "UPDATE `$dbtable` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `Email` = '" . $email . "', `PhoneNumber` = '" . $phone_number . "', `Salary` = '" . $salary . "', `Role` = '" . $role . "' WHERE `$dbID` = '" . $id . "' ;";
     $result = mysqli_query($conn, $query);
 
     if(!$result){

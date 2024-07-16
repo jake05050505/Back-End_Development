@@ -5,7 +5,7 @@
             include("db.php");
             $id = $_POST['edit_id'];
 
-            $query = "SELECT `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Salary`, `Role` FROM `staff` WHERE `staffID` = '" . $id . "';";
+            $query = "SELECT `FirstName`, `LastName`, `Email`, `PhoneNumber`, `Salary`, `Role` FROM `$dbtable` WHERE `$dbID` = '" . $id . "';";
             $result = mysqli_query($conn, $query);
 
             if (!$result) {

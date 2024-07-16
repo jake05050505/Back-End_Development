@@ -37,13 +37,13 @@
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM `staff` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Email` LIKE '%" . $_GET["Email"] . "%')";
+                    $query = "SELECT * FROM `$dbtable` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Email` LIKE '%" . $_GET["Email"] . "%')";
                     $result = mysqli_query($conn, $query);
                     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
                     foreach($rows as $row){
                         echo('<tr>');
-                        echo('  <td>' . $row['staffID'] . '</td>');
+                        echo('  <td>' . $row['$dbID'] . '</td>');
                         echo('  <td>' . $row['FirstName'] . '</td>');
                         echo('  <td>' . $row['LastName'] . '</td>');
                         echo('  <td>' . $row['Email'] . '</td>');
