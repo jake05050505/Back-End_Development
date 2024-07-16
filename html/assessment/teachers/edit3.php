@@ -1,7 +1,7 @@
 <?php //This code is repurposed from Sam Hirst's code provided in class
     include("db.php");
 
-    $id = $_GET['$dbID'];
+    $id = $_GET[$dbID];
     $first_name = $_GET['FirstName'];
     $last_name = $_GET['LastName'];
     $email = $_GET['Email'];
