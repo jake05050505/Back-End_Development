@@ -1,17 +1,20 @@
 <?php
     include("db.php");
 
-    $id = $_GET['employee_id'];
-    $first_name = $_GET['employee_first_name'];
-    $last_name = $_GET['employee_last_name'];
-    $email = $_GET['employee_email'];
+    $id = $_GET['staffID'];
+    $first_name = $_GET['FirstName'];
+    $last_name = $_GET['LastName'];
+    $email = $_GET['Email'];
+    $phone_number = $_GET['PhoneNumber'];
+    $salary = $_GET['Salary'];
+    $role = $_GET['Role'];
 
-    if ($first_name == '' OR $last_name == '' OR $email == '') {
+    if ($first_name == '' OR $last_name == '' OR $email == '' OR $phone_number == '' OR $salary == '' OR $role == '') {
         header('Location: edit.php?result=invalid');
         die();
     }
 
-    $query = "UPDATE `employees` SET `first_name` = '" . $first_name . "', `last_name` = '" . $last_name ."', `email` = '" . $email . "' WHERE `employee_id` = '" . $id . "' ;";
+    $query = "UPDATE `employees` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `Email` = '" . $email . "', `PhoneNumber` = '" . $phone_number . "', `Salary` = '" . $salary . "', `Role` = '" . $role . "' WHERE `staffID` = '" . $id . "' ;";
     $result = mysqli_query($conn, $query);
 
     if(!$result){
