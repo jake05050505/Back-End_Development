@@ -7,7 +7,7 @@
         <span>|</span>
         <a href="/assessment/staff/get.php">Staff</a>
         <span>|</span>
-        <a href="/assessment/students/get.php">Students</a>
+        <a href="/assessment/student/get.php">Students</a>
     </div>
     <div>
         <a href="/assessment/<?php echo($dbtable) ?>/create.php">create</a>
