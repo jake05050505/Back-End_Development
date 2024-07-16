@@ -1,7 +1,7 @@
 <nav><!--All of the code in this file was written by me-->
     <!--Guardians-->
     <div>
-        <a href="/assessment/guardians/get.php" aria-disabled="True">Parents & Guardians</a>
+        <a href="/assessment/guardian/get.php" aria-disabled="True">Parents & Guardians</a>
         <span>|</span>
         <a href="/assessment/library/get.php">Library data</a>
         <span>|</span>
