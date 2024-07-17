@@ -1,4 +1,4 @@
-<?php include("db.php"); ?>
+<?php include("db.php") ?>
 <nav><!--All of the code in this file was written by me-->
     <!--Guardians-->
     <div>
