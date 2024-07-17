@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Delete Data from Database</title>
+        <title>Delete from Staff</title>
         <?php
             include("db.php");
         ?>
@@ -8,7 +8,6 @@
     </head>
     <body>
         <?php include("nav.php"); ?>
-        <h1>Delete Data from Database</h1>
         <table>
             <thead>
                 <tr>

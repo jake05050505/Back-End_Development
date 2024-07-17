@@ -6,7 +6,6 @@
     <body>
         <?php
             include('nav.php');
-            include('db.php');
             if (!isset($_GET["FirstName"])) {
                 $_GET["FirstName"] = "";
             }

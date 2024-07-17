@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Edit Data in Database</title>
+        <title>Edit Staff Entry</title>
         <?php
             include("db.php");
         ?>
@@ -8,7 +8,6 @@
     </head>
     <body>
         <?php include("nav.php"); ?>
-        <h1>Edit Data in Database</h1>
         <table>
             <thead>
                 <tr>

@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Add Data to Database</title>
+        <title>Add Staff Entry</title>
         <?php
             include("db.php");
         ?>
@@ -33,7 +33,7 @@
             <br>
             <input type="text" name="Role" placeholder="Role:">
             <br>
-            <input type="submit">
+            <input type="submit" value="Submit">
         </form>
     </body>
 </html>

@@ -5,6 +5,6 @@
     $dbname = "assessment";
 
     $dbtable = "staff"; //This line and the one below it were added by me to make it easier to reuse the code in the other tables in the database.
-    $dbID = "staffID";
+    $dbID = $dbtable."ID";
 
     $conn = mysqli_connect($host, $username, $password, $dbname);
