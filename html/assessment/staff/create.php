@@ -21,7 +21,7 @@
             }
         ?>
         <form action="create2.php" method="GET">
-            <input type="text" name="FirstName" id="FirstName" maxlength="32" placeholder="First Name:">
+            <input type="text" name="FirstName" maxlength="32" placeholder="First Name:">
             <br>
             <input type="text" name="LastName" maxlength="32" placeholder="Last Name:">
             <br>
