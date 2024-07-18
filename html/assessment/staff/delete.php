@@ -1,9 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
         <title>Delete from Staff</title>
-        <?php
-            include("db.php");
-        ?>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>

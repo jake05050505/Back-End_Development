@@ -1,9 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Add Staff Entry</title>
-        <?php
-            include("db.php");
-        ?>
+        <title>Add Student Entry</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -14,7 +11,9 @@
                 if ($_GET["result"] == "success"){
                     echo("<p>Your record was added successfully.</p>");
                 } elseif ($_GET["result"] == "invalid"){
-                    echo("<p>You must complete all input fields.</p>");
+                    echo("<p>You must complete all input fields.<br>More Info: The referenced classID may not exist, please check your entry.</p>");
+                } elseif($_GET["result"] == "duplicate") {
+                    echo("<p>You've tried to input a duplicate entry.</p>");
                 } else{
                     die();
                 }

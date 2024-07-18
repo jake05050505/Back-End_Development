@@ -12,31 +12,28 @@
             if (!isset($_GET["LastName"])) {
                 $_GET["LastName"] = "";
             }
-            if (!isset($_GET["Email"])) {
-                $_GET["Email"] = "";
+            if (!isset($_GET["classID"])) {
+                $_GET["classID"] = "";
             }
         ?>
         <form action="" method="GET">
             <input type="text" name="FirstName" value="<?php echo($_GET['FirstName']); ?>" placeholder="FirstName:">
             <input type="text" name="LastName" value="<?php echo($_GET['LastName']); ?>" placeholder="LastName:">
-            <input type="text" name="Email" value="<?php echo($_GET['Email']); ?>" placeholder="Email:">
+            <input type="text" name="classID" value="<?php echo($_GET['classID']); ?>" placeholder="classID">
             <input type="submit" value="Search">
         </form>
         <table>
             <thead>
                 <tr>
-                    <th>staffID</th>
+                    <th><?php echo $dbID; ?></th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Salary</th>
-                    <th>Role</th>
+                    <th>classID</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM `$dbtable` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Email` LIKE '%" . $_GET["Email"] . "%')";
+                    $query = "SELECT * FROM `$dbtable` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`classID` LIKE '%" . $_GET["classID"] . "%')";
                     $result = mysqli_query($conn, $query);
                     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
@@ -45,10 +42,7 @@
                         echo('  <td>' . $row[$dbID] . '</td>');
                         echo('  <td>' . $row['FirstName'] . '</td>');
                         echo('  <td>' . $row['LastName'] . '</td>');
-                        echo('  <td>' . $row['Email'] . '</td>');
-                        echo('  <td>' . $row['PhoneNumber'] . '</td>');
-                        echo('  <td>' . $row['Salary'] . '</td>');
-                        echo('  <td>' . $row['Role'] . '</td>');
+                        echo('  <td>' . $row['classID'] . '</td>');
                         echo('</tr>');
                     }
                 ?>

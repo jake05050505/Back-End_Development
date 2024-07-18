@@ -5,19 +5,18 @@
     $last_name = $_GET["LastName"];
     $classID = $_GET["classID"];
 
-
-    if ($first_name == "" OR $last_name == "" OR $email == "" OR $phone_number == "" OR $salary == "" OR $role == "") {
+    if ($first_name == "" OR $last_name == "" OR $classID == "") {
         header("Location: create.php?result=invalid");
         die();
     }
 
-    $query = "INSERT INTO `$dbtable` (`FirstName`, `LastName`, `Email`, `PhoneNumber`, `Salary`, `Role`) VALUES ('" . $first_name . "', '" . $last_name ."', '". $email ."', '". $phone_number ."', '". $salary ."', '". $role ."');";
+    $query = "INSERT INTO `$dbtable` (`FirstName`, `LastName`, `classID`) VALUES ('" . $first_name . "', '" . $last_name ."', '". $classID ."');";
 
     try{
         $result = mysqli_query($conn, $query);
     } catch(Exception $e) {
         if (mysqli_errno($conn)){
-            header("Location: create.php?result=duplicate");
+            header("Location: create.php?result=invalid");
             die();
         }
 

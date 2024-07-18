@@ -1,9 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Edit Staff Entry</title>
-        <?php
-            include("db.php");
-        ?>
+        <title>Edit Student Entry</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,13 +8,10 @@
         <table>
             <thead>
                 <tr>
-                    <th>staffID</th>
+                    <th><?php echo $dbID; ?></th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Salary</th>
-                    <th>Role</th>
+                    <th>classID</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,10 +25,7 @@
                         echo("  <td>" . $row[$dbID] . "</td>");
                         echo("  <td>" . $row["FirstName"] . "</td>");
                         echo("  <td>" . $row["LastName"] . "</td>");
-                        echo("  <td>" . $row["Email"] . "</td>");
-                        echo("  <td>" . $row["PhoneNumber"] . "</td>");
-                        echo("  <td>" . $row["Salary"] . "</td>");
-                        echo("  <td>" . $row["Role"] . "</td>");
+                        echo("  <td>" . $row["classID"] . "</td>");
                         echo("  <td>");
                         echo("      <form action='edit2.php' method='POST'>");
                         echo("          <input type='hidden' name='edit_id' value='" . $row[$dbID] . "'>");
