@@ -7,7 +7,7 @@
     <h1>The entry with <?php echo $dbID; ?>=<?php echo($_GET["delete_id"]) ?> will be deleted.</h1>
     <form action="delete3.php" method="GET">
         <input type="hidden" name="delete_id" value="<?php echo($_GET["delete_id"]); ?>">
-        <input type="submit">
+        <input type="submit" value="DELETE"><!--value is used to change the text of the button-->
     </form>
     <form action="delete.php">
         <button type="submit">Go back</button>
