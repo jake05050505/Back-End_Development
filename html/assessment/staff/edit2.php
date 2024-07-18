@@ -27,7 +27,7 @@
         <?php include("nav.php"); ?>
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
-            <input type="hidden" name="staffID" value="<?php echo($id); ?>">
+            <input type="hidden" name="<?php echo($dbID); ?>" value="<?php echo($id); ?>">
             <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>" placeholder="First Name:">
             <br>
             <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:">

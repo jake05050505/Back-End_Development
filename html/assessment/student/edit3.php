@@ -4,17 +4,14 @@
     $id = $_GET[$dbID];
     $first_name = $_GET['FirstName'];
     $last_name = $_GET['LastName'];
-    $email = $_GET['Email'];
-    $phone_number = $_GET['PhoneNumber'];
-    $salary = $_GET['Salary'];
-    $role = $_GET['Role'];
+    $classID = $_GET['classID'];
 
-    if ($first_name == '' OR $last_name == '' OR $email == '' OR $phone_number == '' OR $salary == '' OR $role == '') {
+    if ($first_name == '' OR $last_name == '' OR $classID == '') {
         header('Location: edit.php?result=invalid');
         die();
     }
 
-    $query = "UPDATE `$dbtable` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `Email` = '" . $email . "', `PhoneNumber` = '" . $phone_number . "', `Salary` = '" . $salary . "', `Role` = '" . $role . "' WHERE `$dbID` = '" . $id . "' ;";
+    $query = "UPDATE `$dbtable` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `classID` = '" . $classID . "' WHERE `$dbID` = '" . $id . "' ;";
     $result = mysqli_query($conn, $query);
 
     if(!$result){
