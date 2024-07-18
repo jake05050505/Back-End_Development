@@ -2,16 +2,16 @@
     include("db.php");
 
     $id = $_GET[$dbID];
-    $first_name = $_GET['FirstName'];
-    $last_name = $_GET['LastName'];
-    $classID = $_GET['classID'];
+    $name = $_GET['Name'];
+    $returndate = $_GET['ReturnDate'];
+    $studentID = $_GET['studentID'];
 
-    if ($first_name == '' OR $last_name == '' OR $classID == '') {
+    if ($name == '' OR $returndate == '' OR $studentID == '') {
         header('Location: edit.php?result=invalid');
         die();
     }
 
-    $query = "UPDATE `$dbtable` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `classID` = '" . $classID . "' WHERE `$dbID` = '" . $id . "' ;";
+    $query = "UPDATE `$dbtable` SET `Name` = '" . $name . "', `ReturnDate` = '" . $returndate ."', `studentID` = '" . $studentID . "' WHERE `$dbID` = '" . $id . "' ;";
     $result = mysqli_query($conn, $query);
 
     if(!$result){

@@ -5,7 +5,7 @@
             include("db.php");
             $id = $_POST['edit_id'];
 
-            $query = "SELECT `FirstName`, `LastName`, `classID` FROM `$dbtable` WHERE `$dbID` = '" . $id . "';";
+            $query = "SELECT `Name`, `ReturnDate`, `studentID` FROM `$dbtable` WHERE `$dbID` = '" . $id . "';";
             $result = mysqli_query($conn, $query);
 
             if (!$result) {
@@ -28,11 +28,11 @@
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
             <input type="hidden" name="<?php echo($dbID) ?>" value="<?php echo($id); ?>">
-            <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>" placeholder="First Name:">
+            <input type="text" name="Name" value="<?php echo($record['Name']);?>" placeholder="Book Name:">
             <br>
-            <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:">
+            <input type="text" name="ReturnDate" value="<?php echo($record['ReturnDate']);?>" placeholder="Return Date:">
             <br>
-            <input type="number" name="classID" value="<?php echo($record['classID']);?>" placeholder="classID:">
+            <input type="number" name="studentID" value="<?php echo($record['studentID']);?>" placeholder="studentID:">
             <br>
             <input type="submit" value="Submit">
         </form>

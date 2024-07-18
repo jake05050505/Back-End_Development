@@ -9,9 +9,9 @@
             <thead>
                 <tr>
                     <th><?php echo $dbID; ?></th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>classID</th>
+                    <th>Name</th>
+                    <th>Return Date</th>
+                    <th>studentID</th>
                 </tr>
             </thead>
             <tbody>
@@ -23,9 +23,9 @@
                     foreach($rows as $row) {
                         echo("<tr>");
                         echo("  <td>" . $row[$dbID] . "</td>");
-                        echo("  <td>" . $row["FirstName"] . "</td>");
-                        echo("  <td>" . $row["LastName"] . "</td>");
-                        echo("  <td>" . $row["classID"] . "</td>");
+                        echo("  <td>" . $row["Name"] . "</td>");
+                        echo("  <td>" . $row["ReturnDate"] . "</td>");
+                        echo("  <td>" . $row["studentID"] . "</td>");
                         echo("  <td>");
                         echo("      <form action='edit2.php' method='POST'>");
                         echo("          <input type='hidden' name='edit_id' value='" . $row[$dbID] . "'>");
