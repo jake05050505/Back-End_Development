@@ -19,7 +19,7 @@
         <form action="" method="GET">
             <input type="text" name="FirstName" value="<?php echo($_GET['FirstName']); ?>" placeholder="FirstName:">
             <input type="text" name="LastName" value="<?php echo($_GET['LastName']); ?>" placeholder="LastName:">
-            <input type="text" name="classID" value="<?php echo($_GET['classID']); ?>" placeholder="classID">
+            <input type="text" name="classID" value="<?php echo($_GET['classID']); ?>" placeholder="classID:">
             <input type="submit" value="Search">
         </form>
         <table>

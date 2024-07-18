@@ -2,7 +2,7 @@
     color-scheme: light dark;
 }
 body{
-    font-family: "segoe ui", 'inconsolata', consolas, monospace
+    font-family: "segoe ui", 'inconsolata', consolas, monospace;
 }
 nav{
     background-color: light-dark(#e9e9ed,#30363d);
@@ -19,4 +19,8 @@ input{
   }
 h1{
     margin: auto;
+}
+a{
+    text-decoration: underline dotted;
+    color: light-dark(black,white);
 }

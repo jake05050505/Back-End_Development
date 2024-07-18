@@ -12,14 +12,14 @@
             if (!isset($_GET["LastName"])) {
                 $_GET["LastName"] = "";
             }
-            if (!isset($_GET["Email"])) {
-                $_GET["Email"] = "";
+            if (!isset($_GET["Role"])) {
+                $_GET["Role"] = "";
             }
         ?>
         <form action="" method="GET">
             <input type="text" name="FirstName" value="<?php echo($_GET['FirstName']); ?>" placeholder="FirstName:">
             <input type="text" name="LastName" value="<?php echo($_GET['LastName']); ?>" placeholder="LastName:">
-            <input type="text" name="Email" value="<?php echo($_GET['Email']); ?>" placeholder="Email:">
+            <input type="text" name="Role" value="<?php echo($_GET['Role']); ?>" placeholder="Role:">
             <input type="submit" value="Search">
         </form>
         <table>
@@ -36,7 +36,7 @@
             </thead>
             <tbody>
                 <?php
-                    $query = "SELECT * FROM `$dbtable` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Email` LIKE '%" . $_GET["Email"] . "%')";
+                    $query = "SELECT * FROM `$dbtable` WHERE (`FirstName` LIKE '%" . $_GET["FirstName"] . "%') AND (`LastName` LIKE '%" . $_GET["LastName"] . "%') AND (`Role` LIKE '%" . $_GET["Role"] . "%')";
                     $result = mysqli_query($conn, $query);
                     $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
