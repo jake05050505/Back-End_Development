@@ -32,7 +32,7 @@
             <br>
             <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:">
             <br>
-            <input type="text" name="Email" value="<?php echo($record['Email']);?>" placeholder="E-mail Address:">
+            <input type="email" name="Email" value="<?php echo($record['Email']);?>" placeholder="E-mail Address:">
             <br>
             <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>" placeholder="Phone Number:">
             <br>

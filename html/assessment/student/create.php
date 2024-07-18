@@ -24,7 +24,7 @@
             <br>
             <input type="text" name="LastName" maxlength="32" placeholder="Last Name:">
             <br>
-            <input type="text" name="classID" maxlength="64" placeholder="classID:">
+            <input type="number" name="classID" maxlength="64" placeholder="classID:">
             <br>
             <input type="submit" value="Submit">
         </form>
