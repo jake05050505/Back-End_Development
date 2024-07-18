@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Delete from Students</title>
+        <title>Delete from Guardians</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,7 +11,8 @@
                     <th><?php echo $dbID; ?></th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>classID</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
                 </tr>
             </thead>
             <tbody>
@@ -25,7 +26,8 @@
                         echo("  <td>" . $row[$dbID] . "</td>");
                         echo("  <td>" . $row["FirstName"] . "</td>");
                         echo("  <td>" . $row["LastName"] . "</td>");
-                        echo("  <td>" . $row["classID"] . "</td>");
+                        echo("  <td>" . $row["Email"] . "</td>");
+                        echo("  <td>" . $row["PhoneNumber"] . "</td>");
                         echo("  <td>");
                         echo("      <form action='delete2.php' method='GET'>");
                         echo("          <input type='hidden' name='delete_id' value='" . $row[$dbID] . "'>");
