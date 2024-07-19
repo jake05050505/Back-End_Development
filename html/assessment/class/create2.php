@@ -10,7 +10,7 @@
         die();
     }
 
-    $query = "INSERT INTO `$dbtable` (`staffID`, `Subject`, `Room`) VALUES ('" . $first_name . "', '" . $last_name ."', '". $room ."');";
+    $query = "INSERT INTO `$dbtable` (`staffID`, `Subject`, `Room`) VALUES ('" . $staffID . "', '" . $subject ."', '". $room ."');";
 
     try{
         $result = mysqli_query($conn, $query);

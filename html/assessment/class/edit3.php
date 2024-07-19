@@ -6,7 +6,7 @@
     $subject = $_GET['Subject'];
     $room = $_GET['Room'];
 
-    if ($staffID == '' OR $subject == '' OR $room == '' OR $phone_number == '') {
+    if ($staffID == '' OR $subject == '' OR $room == '') {
         header('Location: edit.php?result=invalid');
         die();
     }
