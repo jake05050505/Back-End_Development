@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Edit Guardian Entry</title>
+        <title>Delete from Guardians</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -29,9 +29,9 @@
                         echo("  <td>" . $row["Email"] . "</td>");
                         echo("  <td>" . $row["PhoneNumber"] . "</td>");
                         echo("  <td>");
-                        echo("      <form action='edit2.php' method='POST'>");
-                        echo("          <input type='hidden' name='edit_id' value='" . $row[$dbID] . "'>");
-                        echo("          <button type='submit'>Edit</button>");
+                        echo("      <form action='delete2.php' method='GET'>");
+                        echo("          <input type='hidden' name='delete_id' value='" . $row[$dbID] . "'>");
+                        echo("          <button type='submit'>Delete</button>");
                         echo("      </form>");
                         echo("  </td>");
                         echo("</tr>");

@@ -28,7 +28,7 @@
             <br>
             <input type="number" name="Salary" step="1" placeholder="Salary:">
             <br>
-            <input type="text" name="Role" placeholder="Role:">
+            <input type="text" name="Role" maxlength="32" placeholder="Role:">
             <br>
             <input type="submit" value="Submit">
         </form>

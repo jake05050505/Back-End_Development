@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Add Guardian Entry</title>
+        <title>Add Class Entry</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -20,13 +20,11 @@
             }
         ?>
         <form action="create2.php" method="GET">
-            <input type="text" name="FirstName" maxlength="32" placeholder="First Name:">
+            <input type="number" name="staffID" placeholder="TeacherID:">
             <br>
-            <input type="text" name="LastName" maxlength="32" placeholder="Last Name:">
+            <input type="text" name="Subject" maxlength="32" placeholder="Subject:">
             <br>
-            <input type="email" name="Email" maxlength="64" placeholder="E-Mail Address:">
-            <br>
-            <input type="text" name="PhoneNumber" maxlength="16" placeholder="Phone Number:">
+            <input type="email" name="Room" maxlength="8" placeholder="Room:">
             <br>
             <input type="submit" value="Submit">
         </form>

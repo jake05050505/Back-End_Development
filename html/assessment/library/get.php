@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>read</title>
+        <title>View Library table</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>

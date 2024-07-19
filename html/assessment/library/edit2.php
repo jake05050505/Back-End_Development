@@ -28,11 +28,11 @@
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
             <input type="hidden" name="<?php echo($dbID) ?>" value="<?php echo($id); ?>">
-            <input type="text" name="Name" value="<?php echo($record['Name']);?>" placeholder="Book Name:">
+            <input type="text" name="Name" value="<?php echo($record['Name']);?>" placeholder="Book Name:" maxlength="64">
             <br>
-            <input type="text" name="ReturnDate" value="<?php echo($record['ReturnDate']);?>" placeholder="Return Date:">
+            <input type="date" name="ReturnDate" value="<?php echo($record['ReturnDate']);?>" placeholder="Return Date:">
             <br>
-            <input type="number" name="studentID" value="<?php echo($record['studentID']);?>" placeholder="studentID:">
+            <input type="number" name="studentID" value="<?php echo($record['studentID']);?>" placeholder="studentID:" step="1">
             <br>
             <input type="submit" value="Submit">
         </form>

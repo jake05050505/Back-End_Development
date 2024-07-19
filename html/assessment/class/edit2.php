@@ -28,13 +28,13 @@
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
             <input type="hidden" name="<?php echo($dbID) ?>" value="<?php echo($id); ?>">
-            <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>" placeholder="First Name:" maxlength="32">
+            <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>" placeholder="First Name:">
             <br>
-            <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:" maxlength="32">
+            <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:">
             <br>
-            <input type="email" name="Email" value="<?php echo($record['Email']);?>" placeholder="E-mail Address:" maxlength="64">
+            <input type="email" name="Email" value="<?php echo($record['Email']);?>" placeholder="E-mail Address:">
             <br>
-            <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>" placeholder="Phone Number:" maxlength="16">
+            <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>" placeholder="Phone Number:">
             <br>
             <input type="submit" value="Submit">
         </form>

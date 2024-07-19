@@ -20,11 +20,11 @@
             }
         ?>
         <form action="create2.php" method="GET">
-            <input type="text" name="Name" maxlength="32" placeholder="Book Name:">
+            <input type="text" name="Name" maxlength="64" placeholder="Book Name:">
             <br>
-            <input type="date" name="ReturnDate" maxlength="32" placeholder="Return Date:">
+            <input type="date" name="ReturnDate" placeholder="Return Date:">
             <br>
-            <input type="number" name="studentID" maxlength="64" placeholder="studentID:">
+            <input type="number" name="studentID" placeholder="studentID:" step="1">
             <br>
             <input type="submit" value="Submit">
         </form>

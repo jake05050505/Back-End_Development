@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Edit Student Entry</title>
+        <title>Edit Book Entry</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>

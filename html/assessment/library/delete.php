@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Delete from Students</title>
+        <title>Delete book/remove student from book</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>

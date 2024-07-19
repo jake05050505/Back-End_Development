@@ -28,17 +28,17 @@
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
             <input type="hidden" name="<?php echo($dbID); ?>" value="<?php echo($id); ?>">
-            <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>" placeholder="First Name:">
+            <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>" placeholder="First Name:" maxlength="32">
             <br>
-            <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:">
+            <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:" maxlength="32">
             <br>
-            <input type="email" name="Email" value="<?php echo($record['Email']);?>" placeholder="E-Mail Address:">
+            <input type="email" name="Email" value="<?php echo($record['Email']);?>" placeholder="E-Mail Address:" maxlength="64">
             <br>
-            <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>" placeholder="Phone Number:">
+            <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>" placeholder="Phone Number:" maxlength="16">
             <br>
-            <input type="number" name="Salary" value="<?php echo($record['Salary']);?>" placeholder="Salary:">
+            <input type="number" name="Salary" value="<?php echo($record['Salary']);?>" placeholder="Salary:" step="1">
             <br>
-            <input type="text" name="Role" value="<?php echo($record['Role']);?>" placeholder="Role:">
+            <input type="text" name="Role" value="<?php echo($record['Role']);?>" placeholder="Role:" maxlength="32">
             <br>
             <input type="submit" value="Submit">
         </form>
