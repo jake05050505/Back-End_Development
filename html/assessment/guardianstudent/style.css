@@ -1,0 +1,26 @@
+:root{
+    color-scheme: light dark;
+}
+body{
+    font-family: "segoe ui", 'inconsolata', consolas, monospace;
+}
+nav{
+    background-color: light-dark(#e7e7ef,#30363d);
+    padding: 0 1rem;
+    border-radius: 0.6rem;
+}
+div{
+    position: relative;
+    top: 0.4em;
+}
+input{
+    margin: 0.2em;
+    padding: 0.1em;
+  }
+h1{
+    margin: auto;
+}
+a{
+    text-decoration: underline dotted;
+    color: light-dark(black,white);
+}
