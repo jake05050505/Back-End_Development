@@ -4,7 +4,7 @@
     $password = "password";
     $dbname = "assessment";
 
-    $dbtable = "class"; //This line and the one below it were added by me to make it easier to reuse the code in the other tables in the database.
-    $dbID = $dbtable."ID";
+    $dbtable = "guardianstudent"; //This line and the one below it were added by me to make it easier to reuse the code in the other tables in the database.
+    //This line would usually hold the name of the primary key, however this table only uses two foreign keys.
 
     $conn = mysqli_connect($host, $username, $password, $dbname);

@@ -24,3 +24,9 @@ a{
     text-decoration: underline dotted;
     color: light-dark(black,white);
 }
+td,th{
+    text-align: center;
+}
+th{
+    text-decoration: underline;
+}

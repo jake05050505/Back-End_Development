@@ -21,8 +21,6 @@
         <span>|</span>
         <a href="/assessment/<?php echo($dbtable) ?>/get.php">read</a>
         <span>|</span>
-        <a href="/assessment/<?php echo($dbtable) ?>/edit.php">update</a>
-        <span>|</span>
         <a href="/assessment/<?php echo($dbtable) ?>/delete.php">delete</a>
     </div>
     <br>

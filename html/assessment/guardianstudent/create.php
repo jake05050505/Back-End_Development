@@ -1,6 +1,6 @@
 <html><!--This code is repurposed from Sam Hirst's code provided in class-->
     <head>
-        <title>Add Class Entry</title>
+        <title>Create Student-Guardian Link</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -11,7 +11,7 @@
                 if ($_GET["result"] == "success"){
                     echo("<p>Your record was added successfully.</p>");
                 } elseif ($_GET["result"] == "invalid"){
-                    echo("<p>You must complete all input fields.</p>");
+                    echo("<p>Ensure all inputs are correct.</p>");
                 } elseif($_GET["result"] == "duplicate") {
                     echo("<p>You've tried to input a duplicate entry.</p>");
                 } else{
@@ -20,11 +20,9 @@
             }
         ?>
         <form action="create2.php" method="GET">
-            <input type="number" name="staffID" step="1" placeholder="TeacherID:">
+            <input type="number" name="guardianID" step="1" placeholder="guardianID:">
             <br>
-            <input type="text" name="Subject" maxlength="32" placeholder="Subject:">
-            <br>
-            <input type="text" name="Room" maxlength="8" placeholder="Room:">
+            <input type="number" name="studentID" step="1" placeholder="studentID:">
             <br>
             <input type="submit" value="Submit">
         </form>
