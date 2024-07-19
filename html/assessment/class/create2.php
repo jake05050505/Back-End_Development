@@ -1,17 +1,16 @@
 <?php //This code is repurposed from Sam Hirst's code provided in class
     include("db.php");
 
-    $first_name = $_GET["FirstName"];
-    $last_name = $_GET["LastName"];
-    $email = $_GET["Email"];
-    $phone_number = $_GET["PhoneNumber"];
+    $staffID = $_GET["staffID"];
+    $subject = $_GET["Subject"];
+    $room = $_GET["Room"];
 
-    if ($first_name == "" OR $last_name == "" OR $email == "" OR $phone_number == "") {
+    if ($staffID == "" OR $subject == "" OR $room == "") {
         header("Location: create.php?result=invalid");
         die();
     }
 
-    $query = "INSERT INTO `$dbtable` (`FirstName`, `LastName`, `Email`, `PhoneNumber`) VALUES ('" . $first_name . "', '" . $last_name ."', '". $email ."', '". $phone_number ."');";
+    $query = "INSERT INTO `$dbtable` (`staffID`, `Subject`, `Room`) VALUES ('" . $first_name . "', '" . $last_name ."', '". $room ."');";
 
     try{
         $result = mysqli_query($conn, $query);

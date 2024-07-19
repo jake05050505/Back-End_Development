@@ -20,7 +20,7 @@
             }
         ?>
         <form action="create2.php" method="GET">
-            <input type="number" name="staffID" placeholder="TeacherID:">
+            <input type="number" name="staffID" step="1" placeholder="TeacherID:">
             <br>
             <input type="text" name="Subject" maxlength="32" placeholder="Subject:">
             <br>

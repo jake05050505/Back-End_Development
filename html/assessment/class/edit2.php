@@ -5,7 +5,7 @@
             include("db.php");
             $id = $_POST['edit_id'];
 
-            $query = "SELECT `FirstName`, `LastName`, `Email`, `PhoneNumber` FROM `$dbtable` WHERE `$dbID` = '" . $id . "';";
+            $query = "SELECT `staffID`, `Subject`, `Room` FROM `$dbtable` WHERE `$dbID` = '" . $id . "';";
             $result = mysqli_query($conn, $query);
 
             if (!$result) {
@@ -28,13 +28,11 @@
         <h1>Edit Data in Database</h1>
         <form action="edit3.php" method="GET">
             <input type="hidden" name="<?php echo($dbID) ?>" value="<?php echo($id); ?>">
-            <input type="text" name="FirstName" value="<?php echo($record['FirstName']);?>" placeholder="First Name:">
+            <input type="number" name="staffID" value="<?php echo($record['staffID']);?>" placeholder="staffID:" step="1">
             <br>
-            <input type="text" name="LastName" value="<?php echo($record['LastName']);?>" placeholder="Last Name:">
+            <input type="text" name="Subject" value="<?php echo($record['Subject']);?>" placeholder="Subject:" maxlength="32">
             <br>
-            <input type="email" name="Email" value="<?php echo($record['Email']);?>" placeholder="E-mail Address:">
-            <br>
-            <input type="text" name="PhoneNumber" value="<?php echo($record['PhoneNumber']);?>" placeholder="Phone Number:">
+            <input type="text" name="Room" value="<?php echo($record['Room']);?>" placeholder="Room:" maxlength="8">
             <br>
             <input type="submit" value="Submit">
         </form>

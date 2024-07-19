@@ -4,7 +4,7 @@
     $password = "password";
     $dbname = "assessment";
 
-    $dbtable = "guardian"; //This line and the one below it were added by me to make it easier to reuse the code in the other tables in the database.
+    $dbtable = "class"; //This line and the one below it were added by me to make it easier to reuse the code in the other tables in the database.
     $dbID = $dbtable."ID";
 
     $conn = mysqli_connect($host, $username, $password, $dbname);

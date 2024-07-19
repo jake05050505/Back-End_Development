@@ -2,17 +2,16 @@
     include("db.php");
 
     $id = $_GET[$dbID];
-    $first_name = $_GET['FirstName'];
-    $last_name = $_GET['LastName'];
-    $email = $_GET['Email'];
-    $phone_number = $_GET['PhoneNumber'];
+    $staffID = $_GET['staffID'];
+    $subject = $_GET['Subject'];
+    $room = $_GET['Room'];
 
-    if ($first_name == '' OR $last_name == '' OR $email == '' OR $phone_number == '') {
+    if ($staffID == '' OR $subject == '' OR $room == '' OR $phone_number == '') {
         header('Location: edit.php?result=invalid');
         die();
     }
 
-    $query = "UPDATE `$dbtable` SET `FirstName` = '" . $first_name . "', `LastName` = '" . $last_name ."', `Email` = '" . $email . "', `PhoneNumber` = '" . $phone_number . "' WHERE `$dbID` = '" . $id . "' ;";
+    $query = "UPDATE `$dbtable` SET `staffID` = '" . $staffID . "', `Subject` = '" . $subject ."', `Room` = '" . $room . "' WHERE `$dbID` = '" . $id . "' ;";
     $result = mysqli_query($conn, $query);
 
     if(!$result){
