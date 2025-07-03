@@ -10,7 +10,7 @@
             if (isset($_GET["result"])){
                 if ($_GET["result"] == "success"){
                     echo("<p>Your record was added successfully.</p>");
-                } elseif ($_GET["result"] == "invalid"){
+                } elseif($_GET["result"] == "invalid"){
                     echo("<p>You must complete all input fields.</p>");
                 } elseif($_GET["result"] == "duplicate") {
                     echo("<p>You've tried to input a duplicate entry.</p>");
